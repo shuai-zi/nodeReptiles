@@ -3,7 +3,7 @@ const cheerio = require("cheerio")
 const fs = require("fs")
 const URL = "https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=500&page_start=0"
 const urlList = []
-let num = 498	//从num开始、索引
+let num = 0	//从num开始、索引
 
 $http(URL).then(res => {
 	const data = JSON.parse(res).subjects
