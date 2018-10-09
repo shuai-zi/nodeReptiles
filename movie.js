@@ -17,7 +17,6 @@ $http(URL).then(res => {
 }).catch(err => {
 	console.log(err)
 })
-
 //数据请求
 function $http(dataUrl) {
 	//发送请求
